@@ -81,6 +81,8 @@
 #lateral{
     width: 29%;
     min-height: 500px;
+    max-height: 650px;
+    overflow: auto;
     background-color: seagreen;
     float:left;
     margin: 5px 6px; 
@@ -108,4 +110,24 @@
     font-size: 20px;
     height: 40px;
     line-height: 40px;
+}
+
+.libre{
+    width:80px;
+    height: 80px;
+    background-color: rosybrown;
+    border: 1px solid black;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+.libre2{
+    width:80px;
+    height: 80px;
+    background-color: sienna;
+    border: 1px solid black;
+    font-size: 13px;
+    position: relative;
+    z-index: 3;
 }
