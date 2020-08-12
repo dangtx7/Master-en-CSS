@@ -131,3 +131,18 @@
     position: relative;
     z-index: 3;
 }
+
+.libre3{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    font-size: 25px;
+    font-weight: bold;
+    position: fixed;
+    color: white;
+    bottom: 25px;
+    right: 0px;
+    border-radius: 50%;
+    padding: 0px 0px;
+    text-align: center;
+}
