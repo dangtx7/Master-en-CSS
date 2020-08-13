@@ -1,0 +1,59 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*
+# Cambiando las propiedas del primer elemento 
+*/
+
+
+ol li:first-child{
+    color: royalblue;
+    font-size: 20px;
+}
+
+/*
+# Cambiando las propiedades del ultimo elemento
+*/
+
+ol li:last-child{
+    color: seagreen;
+    font-size: 20px;
+}
+
+/*
+# Cambiando las propiedades del tercer elemento
+*/
+
+ol li:nth-child(3){
+    color: sienna;
+    font-size: 25px;
+}
+
+/*
+# Cambiando las propiedades de un enlace
+*/
+#mi_enlace:link{
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+#mi_enlace:visited{
+    color: purple;
+    font-family: 'Lucida Sans';
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+input[type="text"]{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+input[type="text"]:focus{
+    border: 5px dashed brown;
+    border-radius: 10px;
+
+}
