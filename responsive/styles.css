@@ -61,22 +61,48 @@
 }
 
 /* === RESPONSIVE === */
-@media (max-width:375px){
+@media (max-width: 425px){
+    
     #cabecera{
         line-height: normal;
         font-size: 20px;
-    }
-
-    #barra{
-        display: none;
     }
 
     #contenido{
         width: 100%;
     }
     
-    
+    #contenido article{
+        width: 90%!important;
+        background-color: goldenrod!important;
+        color: gray!important;
+        margin: 20px 12px!important;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 150px;
+        margin: 15px 15px;
+        font-size: 20px;
+    }
+    #barra{
+        display: none;
+    }
 }
+
+
+@media (max-width: 768px) and (min-width:425px){
+    #contenido article{
+        background-color: red;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 150px;
+        width: 180px;
+        margin: 15px 15px;
+        font-size: 20px;
+    }
+}
+
+
 
 
 
