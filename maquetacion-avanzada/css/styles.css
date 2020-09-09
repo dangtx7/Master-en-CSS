@@ -64,7 +64,7 @@ body{
     margin-left: 25px;
 }
 
-.gear{
+.gear, .icon{
     font-family: "WebSymbolsRegular"; 
 }
 
@@ -104,3 +104,135 @@ body{
     color: #37bcf9;
     transform: scale(1.2);
 }
+
+/* === BANNER STYLES === */
+#banner{
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px #ccc;
+    height: 100px;
+    width: 97%;
+    background: url("../img/bakbaner.png");
+    background-position: -200px -200px;
+    border: 10px solid white;
+
+}
+
+#banner h1{
+    display: block;
+    margin: 25px auto;
+    width: 830px;
+    font-size: 45px;
+    font-family: "Bebas";
+    font-weight: normal;
+    color:white;
+    text-shadow: 2px 2px 1px black;
+    letter-spacing: 2px;
+}
+
+/* === CARDS STYLES === */
+#cards{
+    width: 98.5%;
+    height: 310px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    margin: 40px 0px;
+}
+
+.card{
+    width: 205px;
+    height: 100%;
+    float: left;
+    margin: 0px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+span.icon{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 15px 0px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#cards .card h2{
+    text-align: center;
+    color: #00538c;
+    font-family: "TrebuchetMS";
+    font-size: 20px;
+}
+
+#cards .card p{
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    color: #00538c;
+    font-family: "TrebuchetMS";
+}
+
+/* === ASIDE === */
+#right-bar{
+    border: 1px solid black;
+    width: 300px;
+    margin-right: 20px;
+    float: right;
+    font-family: "TrebuchetMS";
+    min-height: 1000px;
+
+}
+
+#right-bar h3{
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    border: 1px solid black;
+    background: url("../img/pxgray.png") white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f;
+    margin: 30px 0px;
+    font-family: "Bebas";
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding: 0px 10px;
+}
+
+#right-bar h3:first-child{
+    margin-top: 0px;
+}
+
+#right-bar #search{
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #ccc inset;
+}
+
+#right-bar #search input[type="text"]{
+    width: 85%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding-left: 5px;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+input[type="text"]:focus{
+    border:1px solid white;
+
+}
+
+
+
+
+
+
+
+
+

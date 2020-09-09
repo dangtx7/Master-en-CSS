@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
     <title> Maquetación Avanzada Responsive Design</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="favicon/x-icon" href="img/supertux.png">
@@ -28,7 +29,97 @@
         </div>
     </header>
 
+    <!-- Contenedor para el contenido -->
+    <section class="wrap">
+        
+        <!-- Sección para el Banner y las Tarjetas -->
+        <secttion id="info">
+            <!-- Banner -->
+            <div id="banner">
+                <h1>CURSOS DE DESARROLLO WEB CON VÍCTOR ROBLES WEB</h1>
+            </div>
+
+            <!-- Tarjetas Información -->
+            <div id="cards">
+                <div class="card">
+                    <span class="icon">H</span>
+                    <h2>Desarrollo Web</h2>
+                    <p>Aprende los principales lenguajes para desarrollar webs, ¡Conviertete en un Webmaster!</p>
+                </div>
+                <div class="card">
+                    <span class="icon">_</span>
+                    <h2>Sitemas Operativos</h2>
+                    <p>Aprender a Administrar sistemas Linux, MacOS y Windows</p>
+                </div>
+                <div class="card">
+                    <span class="icon">S</span>
+                    <h2>Hardware</h2>
+                    <p>Conoce todos sobre los componentes de un computador.</p>
+                </div>
+                <div class="card">
+                    <span class="icon">u</span>
+                    <h2>Redes e Internet</h2>
+                    <p>Aprende a configurar y adminitrar Redes Informáticas y Servidores</p>
+                </div>
+                <div class="card">
+                    <span class="icon">a</span>
+                    <h2>Bases de Datos</h2>
+                    <p>Aprender a Montar y Administrar Bases de Datos</p>
+                </div>
+            </div>
+        </secttion>
+
+        <!-- Barra Lateral -->
+        <aside id="right-bar">
+            <h3>Buscar</h3>
+            <div id="search">
+                <form>
+                    <input type="text" name="search" />
+                    <input class="icon" type="button" value="L" />
+                </form>
+            </div>
+
+            <h3>Login</h3>
+            <form id="login">
+
+                <label class="icon">U</label>
+                <input type="email" name="email" />
+                
+                <label class="icon">w</label>
+                <input type="password" name="password" />
+            
+                <input type="submit" value="Entrar" />
+                <input type="reset" value="Limpiar" />
+
+                <a href="#"> Registrate aquí </a>
+                <a href="#"> ¿Has olvidado tu contraseña? </a>
+            </form>
+
+            <h3>Redes Sociales</h3>
+            <div id="social">
+                <a href="#" class="twitter icon">t</a>
+
+                <a href="#" class="facebook icon">f</a>
+
+                <a href="#" class="youtube icon">y</a>
+            </div>
+            
+            <h3>Patrocinadores</h3>
+            <div id="sponsors">
+                <ul>
+                    <li><a href="#"> GitHub </a></li>
+                    <li><a href="#"> Domestika </a></li>
+                    <li><a href="#"> Udemy </a></li>
+                    <li><a href="#"> Platzi </a></li>
+                    <li><a href="#"> EDTeam </a></li>
+                </ul>
+                
+            </div>
+        
+        </aside>
 
 
+    </section>
+   
 </body>
 </html>
