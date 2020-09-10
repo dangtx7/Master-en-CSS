@@ -220,19 +220,72 @@ span.icon{
     background-color: transparent;
     padding-left: 5px;
     border-radius: 5px;
-    color: #ccc;
+    color: #555;
 }
 
-input[type="text"]:focus{
-    border:1px solid white;
+#right-bar #search input[type="button"]{
+    height: 30px;
+    width: 11.3%;
+    color: #555;
+    background-color: transparent;
+    cursor: pointer;
+    border-left: 1px solid #ccc;
+}
 
+.border-button{
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+#right-bar #search input[type="text"]:focus{
+    color: black;
+}
+
+.aside-box{
+    border: 0px solid black;
+    width: 85%;
+    height: 240px;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3),
+                0px 3px 7px rgba(0, 0, 0, 0.3),
+                0px 1px  white inset,
+                0px -3px 3px rgba(0, 0, 0, 0.3) inset;
 }
 
 
+#login input[type="email"], #login input[type="password"]{
+    width: 85%;
+    height: 30px;
+    display: block;
+    margin: 0px auto;
+    box-shadow: 1px 1px 1px #ccc;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+#login label{
+    border: 1px solid black;
+}
 
 
+#login input[type="submit"], #login input[type="reset"]{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(36, 161, 211);
+    color: white;
+    margin: 10px 10px;
+    font-weight: bolder;
+}
 
 
+#login a{
+    display: block;
+    margin: 0px 15px; 
+    font-size: 14px;
+}
 
-
-
+#login a:first-of-type{
+    margin-top: 10px;
+}
