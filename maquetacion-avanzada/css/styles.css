@@ -256,17 +256,34 @@ span.icon{
 
 
 #login input[type="email"], #login input[type="password"]{
-    width: 85%;
+    width: 90%;
     height: 30px;
     display: block;
     margin: 0px auto;
+    border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #ccc;
-    padding: 0px 5px;
+    padding: 0px 30px;
     box-sizing: border-box;
+    color:#555;
+    border-radius: 5px;
 }
 
-#login label{
-    border: 1px solid black;
+#login input[type="email"]:focus, #login input[type="password"]:focus{
+    box-shadow: 0px 0px 6px grey;
+    padding: 0px 30px;
+    color: black;
+}
+
+#login #user, #login #password{
+    position: relative;
+    margin: 0px;
+    top: 24px;
+    left: 20px;
+}
+
+#login #password{
+    font-size: 20px;
+    top: 28px;
 }
 
 
@@ -277,6 +294,16 @@ span.icon{
     color: white;
     margin: 10px 10px;
     font-weight: bolder;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-family: "TrebuchetMS";
+    cursor: pointer;
+}
+
+#login input[type="submit"]:hover, #login input[type="reset"]:hover{
+    background-color: gainsboro;
+    color: black;
 }
 
 
@@ -284,8 +311,42 @@ span.icon{
     display: block;
     margin: 0px 15px; 
     font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+#login a:hover, #sponsors ul li a:hover{
+    text-decoration: underline;
+    color: #0099ff;
 }
 
 #login a:first-of-type{
     margin-top: 10px;
 }
+
+/* === SOCIAL === */
+#social .twitter, #social .facebook, #social .youtube{
+    font-size: 35px;
+    color: black;
+    display: block;
+    margin: 15px 20px;
+}
+
+/* === SPONSORS === */
+#sponsors ul li{
+    margin: 10px 5px;
+}
+
+#sponsors ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#sponsors ul{
+    margin: 20px;
+    position: relative;
+    top: 10px;
+    list-style-type: square;
+}
+
+
