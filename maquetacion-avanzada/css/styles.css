@@ -174,7 +174,6 @@ span.icon{
 
 /* === ASIDE === */
 #right-bar{
-    border: 1px solid black;
     width: 300px;
     margin-right: 20px;
     float: right;
@@ -254,7 +253,7 @@ span.icon{
                 0px -3px 3px rgba(0, 0, 0, 0.3) inset;
 }
 
-
+/* === LOGIN STYLES === */
 #login input[type="email"], #login input[type="password"]{
     width: 90%;
     height: 30px;
@@ -286,7 +285,6 @@ span.icon{
     top: 28px;
 }
 
-
 #login input[type="submit"], #login input[type="reset"]{
     height: 35px;
     width: 100px;
@@ -306,7 +304,6 @@ span.icon{
     color: black;
 }
 
-
 #login a{
     display: block;
     margin: 0px 15px; 
@@ -325,6 +322,10 @@ span.icon{
 }
 
 /* === SOCIAL === */
+#social{
+    height: 180px;
+}
+
 #social .twitter, #social .facebook, #social .youtube{
     font-size: 35px;
     color: black;
@@ -333,6 +334,10 @@ span.icon{
 }
 
 /* === SPONSORS === */
+#sponsors{
+    height: 160px;
+}
+
 #sponsors ul li{
     margin: 10px 5px;
 }
@@ -349,4 +354,116 @@ span.icon{
     list-style-type: square;
 }
 
+/* === ARTICLES === */
+#articles{
+    width: 71%;
+    float: left;
+}
 
+#articles h2{ 
+    border: 1px solid black;
+    text-align: center;
+    height: 75px;
+    font-family: "Bebas";
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 75px;
+    background: url("../img/pxgray.png") white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f;   
+}
+
+#articles article{
+    border: 1px solid #ccc;
+    height: auto;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0px 0px 4px gray;
+}
+
+#articles article h4{
+    font-size: 22px;
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+#articles article h4 a{
+    text-decoration: none;
+    color: #00538c;
+}
+
+#articles article h4 a:hover{
+    text-decoration: underline;
+    color: #37bcf9;
+}
+
+#articles article .data{
+    float: right;
+    padding: 0px 10px;
+    background-color: #555;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0px 0px 0px 5px ;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#articles article p{
+    margin: 10px 0px;
+    padding: 0px 5px;
+    text-align: justify;
+}
+
+#articles article p a{
+    color: #00538c;
+    text-decoration: none;
+}
+
+#articles article p a:hover{
+    text-decoration: underline;
+}
+
+/* === STYLES BUTTON GO TO BLOG === */
+#articles #blog{
+    background-color: white;
+    border: 1px solid #ccc;
+    height: 100px;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: #00538c;
+    font-weight: bold;
+    font-family: "Bebas";
+    letter-spacing: 3px;
+    line-height: 100px;
+    text-decoration: none;
+}
+
+/* === CLEARFIX === */
+.clearfix{
+    float:none;
+    clear: both;
+}
+
+/* === FOOTER === */
+#footer{
+    margin-top: 35px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 400px;
+}
+
+#footer #container{
+    margin: 0px auto;
+    width: 86%;
+}
+
+#footer #menu-footer, #footer #map, #footer #tags{
+    width: 340px;
+    height: 340px;
+    border: 1px solid white;
+    display: inline-block;
+    margin: 40px 20px;
+}
