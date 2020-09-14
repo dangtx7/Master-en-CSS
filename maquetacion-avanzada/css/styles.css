@@ -55,6 +55,12 @@ body{
     background-color: #37bcf9;
     float: left;
     margin: 10px 0px;
+    overflow: hidden;
+}
+
+#logo:hover{
+    color: black;
+    background-color: #ccc;
 }
 
 #logo .gear{
@@ -62,6 +68,46 @@ body{
     font-size: 30px;
     line-height: 46px;
     margin-left: 25px;
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* === KEYFRAME FOR LOGO ROTATION === */
+@keyframes rotate-gear{
+    from{
+        transform: rotateZ(0deg);
+        transform-origin: center;
+    }
+
+    to{
+        transform: rotateZ(360deg);
+        transform-origin: center;
+    }
+}
+
+
+#logo:hover .gear{
+    animation-name: fromBelow;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+/* === KEYFRAMES FOR MOVEMENT GEAR === */
+@keyframes fromBelow{
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(200%); 
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
 }
 
 .gear, .icon{
@@ -73,6 +119,24 @@ body{
     font-size: 40px;
     line-height: 52px;
     margin-left: 14px;
+}
+
+#logo:hover h3{
+    animation-name: fromRight;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+/* === KEYFRAME FOR MOVEMENT H3 LOGO === */
+@keyframes fromRight{
+    from{
+        transform: translateX(300%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
 }
 
 /* === MENU === */
@@ -452,18 +516,95 @@ span.icon{
     background-color: black;
     color: white;
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 #footer #container{
     margin: 0px auto;
-    width: 86%;
+    width: 90%;
+    min-height: 500px;
 }
 
-#footer #menu-footer, #footer #map, #footer #tags{
+#footer #container div{
     width: 340px;
     height: 340px;
-    border: 1px solid white;
-    display: inline-block;
-    margin: 40px 20px;
+    float: left;
+    margin: 40px 30px;
 }
+
+#footer h5{
+    width: 100%;
+    background-color: gray;
+    color: black;
+    font-family: "Bebas";
+    letter-spacing: 2px;
+    font-size: 35px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+/* === Menu Footer === */
+#footer #container #menu-footer nav{
+    width: 90%;
+    margin: 0px auto;
+    color: white;
+}
+
+#footer #menu-footer ul{
+    margin: 0px 15px;
+}
+
+#footer #menu-footer nav ul li{
+    margin-bottom: 25px;
+    font-size: 30px;
+    border-bottom: 1px solid white;
+}
+
+#footer #menu-footer nav ul li a{
+    color: #37bcf9;
+    display: block;
+    text-decoration: none;
+    font-family: "TrebuchetMS";
+}
+
+/* === Map === */
+#footer #container #map{
+    height: 400px;
+}
+
+#footer #map iframe{
+    width: 100%;
+    height: 86%;
+}
+
+/* === Tags === */
+#footer #container #tags p{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+#footer #container #tags p:nth-of-type(+n+2) img{
+    height: 40px;
+}
+
+#footer #container #tags p:nth-of-type(1){
+    display: block;
+}
+
+#footer #container #tags p:nth-of-type(1) img{
+    display: block;
+    margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
