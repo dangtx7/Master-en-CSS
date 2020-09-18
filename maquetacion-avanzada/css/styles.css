@@ -251,6 +251,12 @@ body{
     margin: 0px 15px;
     background-color: white;
     box-shadow: 0px 0px 5px gray;
+    transition: all 400ms;
+    overflow: hidden;
+}
+
+.card:hover{
+    background-color: black;
 }
 
 span.icon{
@@ -260,6 +266,25 @@ span.icon{
     margin: 15px 0px;
     height: 100px;
     line-height: 100px;
+    transition: all 300ms;
+}
+
+.card:hover > span.icon{
+    color: #37bcf9;
+    font-size: 70px;
+    animation-name: showIcon;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+
+/* === ANIMATION FOR TEXT CARD === */
+@keyframes showIcon{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
 }
 
 #cards .card h2{
@@ -267,14 +292,50 @@ span.icon{
     color: #00538c;
     font-family: "TrebuchetMS";
     font-size: 20px;
+    transition: all 300ms;
 }
 
-#cards .card p{
+#cards .card:hover .category{
+    color: white;
+    animation-name: showCategory;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+}
+
+/* === ANIMATION FOR H2 CARDS === */
+@keyframes showCategory{
+    from{
+        transform: translateY(-400%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+#cards .card .description{
     text-align: center;
     padding: 10px;
     margin: 15px;
     color: #00538c;
     font-family: "TrebuchetMS";
+    transition: all 300ms;
+}
+
+#cards .card:hover .description{
+    color: white;
+    animation-name: showDescription;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+}
+
+/* === ANIMATION FOR P CARDS === */
+@keyframes showDescription{
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
 /* === ASIDE === */
