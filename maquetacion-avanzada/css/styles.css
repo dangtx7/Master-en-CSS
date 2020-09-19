@@ -628,6 +628,45 @@ span.icon{
     letter-spacing: 3px;
     line-height: 100px;
     text-decoration: none;
+    transition: all 300ms;
+}
+
+#articles #blog:hover{
+    color:white;
+    border: 10px solid #37bcf9;  
+    background-color: #333;
+    border-radius: 240px;
+    text-shadow: 1px 1px 1px black,
+                 1px 2px 1px black,
+                 1px 3px 1px black,
+                 1px 4px 1px black,
+                 1px 5px 1px black;
+    animation-name: blink;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* === ANIMATION FOR BLOG ANCHOR === */
+@keyframes blink{
+    0%{
+        border-color: #37bcf9;
+    }
+    20%{
+        border-color: green;
+    }
+    40%{
+        border-color: red;
+    }
+    60%{
+        border-color: orange;
+    }
+    80%{
+        border-color: orchid;
+    }
+    100%{
+        border-color: #37bcf9;
+    }
 }
 
 /* === CLEARFIX === */
@@ -693,6 +732,12 @@ span.icon{
     display: block;
     text-decoration: none;
     font-family: "TrebuchetMS";
+    transition: all 300ms;
+}
+
+#footer #menu-footer nav ul li:hover a{
+    padding-left: 25px;
+    color: white;
 }
 
 /* === Map === */
