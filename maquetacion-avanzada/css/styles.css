@@ -688,6 +688,7 @@ span.icon{
     margin: 0px auto;
     width: 90%;
     min-height: 500px;
+    border: 1px solid red;
 }
 
 #footer #container div{
