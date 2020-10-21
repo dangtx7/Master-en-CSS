@@ -36,7 +36,7 @@
     }
 
     #footer #container{
-        width: 90%;
+        width: 95%;
     }
 
     #footer #container div{
@@ -54,6 +54,7 @@
 
 }
 
+/* === Punto de Corte para Tablets === */
 @media (max-width: 768px){
     #banner h1{
         width: 95%;
@@ -66,5 +67,71 @@
         width: 30%;
         margin: 0px 1.8% 25px 1.5%;
     }
+
+    #right-bar{
+        margin-top: 25px; 
+        width: 50%;
+        float: none;
+        margin: 35px auto;
+    }
+
+    #articles{
+        width: 99%;
+    }
+
+    #footer #container{
+        height: auto;
+        min-height: 1250px;
+    }
+
+    #footer #container div{
+        margin: 25px 15px;
+        width: 95%;
+    }
+
+}
+
+/* === Punto de corte para tamaño 475px === */
+@media (max-width:475px){
+    #menu{
+        display: none;
+    }
+}
+
+/* === Punto de corte para Mobiles === */
+@media (max-width: 375px){
+
+    #logo {
+        width: 160px;
+    }
+
+    #logo .gear {
+        margin-left: 19px;
+    }
+
+    #logo h3{
+        font-size: 38px;
+    }
+
+    #menu{
+       display: none;
+    }
+
+    #banner{
+        width: 94%;
+    }
+
+    #banner h1 {
+        font-size: 25px;
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    .card{
+        width: 98%;
+        margin: 0px 1.8% 25px 1.5%;
+    } 
+
+
 
 }
