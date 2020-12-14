@@ -1,0 +1,20 @@
+body{
+    background-color: lightcoral;
+    color: #444;
+}
+
+#layout{
+    border: 4px solid black;
+    background-color: white;
+}
+
+.caja{
+    border: 3px solid black;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: bold;
+}
